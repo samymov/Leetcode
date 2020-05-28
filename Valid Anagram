@@ -1,0 +1,24 @@
+
+NUMCHARS = 256
+def isAnagram_2(str1,str2):
+  if len(s) != len(t):
+    return False
+  count1 = [0]*NUMCHARS
+  count2 = [0]*NUMCHARS
+  for ch in str1:
+    count1[ord(ch)] += 1
+  for ch in str2: 
+    count2[ord(ch)] += 1
+  if count1 == count2:
+    return True
+  return False
+ 
+----------------------------------------------------
+from collections import Counter
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        _s = Counter(s)
+        _t = Counter(t)
+        if _s == _t:
+            return True
+        return False
