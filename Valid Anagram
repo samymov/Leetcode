@@ -1,4 +1,4 @@
-
+#new change
 NUMCHARS = 256
 def isAnagram_2(str1,str2):
   if len(s) != len(t):
